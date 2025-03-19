@@ -38,7 +38,6 @@ body {
 .wrapper { 
   font-family: Poppins;
   max-width: 1200px;
-  padding: 2rem;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
@@ -46,15 +45,19 @@ body {
 
 .logo-and-h1{
   display: flex;
-  /* align-items: center; */
+  align-items: flex-end;
 }
 nav ul {
   list-style-type: none;
-
+  /* ul/ol comes with default padding and margin in the browser.
+  To make a nav bar we need to remove or reset it to zero.*/
+  padding :0;
+  margin: 0;
   display: flex;
   gap: 1rem;
   flex-flow: row wrap;
   justify-content: space-between;
+  padding-bottom: 0.5rem;
 }
 nav ul li a{
   text-decoration: none;
@@ -79,9 +82,12 @@ header {
   align-items: end;
   gap: 1rem;
 }
+
 h1 {
   font-size: 3rem;
   font-weight: 300;
+  margin: 0;
+  /* display: inline-block; */
 }
 
 
@@ -115,7 +121,6 @@ h3{
 
 .parent1 img{
   align-self: center;
-  padding-left: 10px;
   grid-column: 1/2;
   grid-row:1/4;
 }
@@ -165,7 +170,7 @@ h3{
 }
 
 .button2{
-  background-color: var(--darkblue);
+  background-color: var(--royalblue);
   border: 3px solid var(--darkblue);
   border-radius: 10px;
   color: var(--white);
@@ -186,9 +191,7 @@ footer p{
 
 /*Tablet Design starts at 650px*/
 @media(min-width:650px){
-  .parent1 img{
-    padding-left: 0;
-  }
+ 
   .parent2{
     grid-template-columns: 1fr 1fr;
   }
@@ -200,9 +203,7 @@ footer p{
 
 /*Desktop Design starts at 1000px*/
 @media(min-width:1000px){
-  .parent1 img{
-    padding-left: 0;
-  }
+
   .parent2{
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -217,11 +218,9 @@ footer p{
 @media(max-width:999px){
   header{
       justify-content: center;
-      align-items: center;
-      gap: 0;
+      align-items: flex-end;
   }
   nav ul{
     justify-content: center;
-    align-items: center;
   }
 }
