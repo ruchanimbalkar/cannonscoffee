@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8"> <!-- characters used in the code -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive design -->
@@ -10,13 +10,88 @@
         <!-- Currently, the head tag has four children, two meta tags , the title tag and link tag -->
     </head>
     <body>
+      <div class="wrapper">
         <header>
-            <a> <img src="images/cannons-coffee-logo.webp" alt="Cannons Coffee, Beans of Joy! Est. 2014" /> </a>
-            <h1>Cannons Coffee</h1>
-          </header>
 
-          <main>
-            <h2>Coming Soon!</h2>
-          </main>
+          <div class="logo-and-h1">
+            <a> <img src="images/cannons-coffee-logo.webp" alt="Cannons Coffee Logo, Beans of Joy"> </a>
+            <h1>Cannons Coffee</h1>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a href="#" target="_blank">Home</a></li>
+              <li><a href=" " target="_blank">Coffee</a></li>
+              <li><a href=" " target="_blank">About</a></li>
+              <li><a href=" " target="_blank">Contact</a></li>
+            </ul>
+          </nav>
+
+        </header>
+
+        <main>
+            <div class="parent1">
+              <img src="images/coffee-computer.jpg" alt="Laptop with a cup of coffee and a glass of water">
+              <div class="parent1-content">
+                <h2> Coffee and Code</h2>
+                <p> Join us at Cannons Coffee for a pick-me-up and plenty of code assitance and support at our coding cafe! </p>
+                <p> <a class="button" href=" " target="_blank">reserve a table </a> </p>
+              </div>
+            </div>
+
+            <div class="parent2">
+              <h2 class="heading-2"> Our Coffee</h2>
+                <div class="card"> 
+                  <h3> Latte </h3>  
+                  <img class="coffee" src="images/latte.jpg" alt="latte in a cup" >
+                  <p>
+                        Hot or cold with dairy or oat milk,
+                        your favorite is available anytime. 
+                  </p>
+    
+                  <p> <a class="button2" href="latte.html">Order Latte</a> </p>
+                </div>
+    
+                <div class="card"> 
+                      <h3> Coffee </h3>  
+                      <img class="coffee" src="images/coffee.jpg" alt="Coffee in a cup" >
+                      <p>
+                          Simple, elegant, and always in style, our black coffee 
+                          comes from Colombia in small, hand-roasted batches.
+                      </p>
+    
+                      <p>  <a class="button2" href="latte.html">Order Coffee</a> </p>
+                     
+                </div>
+    
+                <div class="card">
+                  <h3> Hot Chocolate</h3>  
+                  <img class="coffee" src="images/hotchoc.jpg" alt= "Hot Chocolate in a cup with whipped cream" >
+                  <p>
+                    Not a coffee person? We have you covered. 
+                    Hot, sweet, ready anytime.
+                  </p>
+
+                  <p>   <a class="button2" href="latte.html">Order Hot</a> </p>
+                </div>
+                
+                <div class="card">
+                  <h3> Iced Coffee</h3>  
+                  <img class="coffee" src="images/iced.jpg" alt= "Iced coffee in a mug with a straw" >
+                  <p>
+                        Perfect for hot summer days, our iced coffee is
+                        made with just enough sweetness to cool down your day.
+                  </p>
+    
+                  <p> <a class="button2" href=" ">order iced</a> </p>
+              </div>              
+            </div>
+        </main>
+
+      </div>
+      <footer>
+        <img src="images/logo-footer.png" alt= "Cannons Coffee, Beans of Joy! Est. 2014">
+        <p> &copy; 2024 Cannons Coffee. All Rights Reserved.</p>
+      </footer>
     </body>
 </html>
