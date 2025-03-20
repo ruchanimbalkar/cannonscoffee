@@ -50,7 +50,7 @@ body {
 nav ul {
   list-style-type: none;
   /* ul/ol comes with default padding and margin in the browser.
-  To make a nav bar we need to remove or reset it to zero.*/
+  To make a nav bar we need to remove the default padding and margin & reset it to zero.*/
   padding :0;
   margin: 0;
   display: flex;
