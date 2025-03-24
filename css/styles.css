@@ -10,6 +10,8 @@
   --royalblue : #06327d;
   --darkblue:#2b70e4;
 
+  --font: Poppins;
+
 }
 
 /* BASIC FORMATTING */
@@ -27,7 +29,7 @@ img {
 }
 
 body {
-  font-family: Poppins;
+  font-family: var(--font);
   font-size: 1.125rem;
   color: var(--black);
   background-color: var(--royalblue);
@@ -36,7 +38,7 @@ body {
 }
 
 .wrapper { 
-  font-family: Poppins;
+  font-family: var(--font);
   max-width: 1200px;
   margin: 0 auto;
 }
