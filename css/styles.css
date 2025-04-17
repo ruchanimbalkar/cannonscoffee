@@ -230,3 +230,23 @@ footer p{
     justify-content: center;
   }
 }
+
+.visibility-hidden{
+  visibility: hidden;
+}
+
+.display-none{
+  display: none;
+}
+
+form{
+  background-color: var(--green);
+  border: 1rem ridge var(--darkblue);
+  padding:1rem;
+  margin:1rem;
+  
+}
+
+fieldset{
+  margin: 0.5rem auto 0.2 auto;
+}
