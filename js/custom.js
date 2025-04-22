@@ -26,7 +26,9 @@ pOne.appendChild(nameLabel);
 pOne.appendChild(nameInput);
 
 const personalFieldset = document.createElement("fieldset");
-personalFieldset.textContent="Personal Information";
+const personalLegend = document.createElement("legend");
+personalLegend.textContent="Personal Information";
+personalFieldset.appendChild(personalLegend);
 personalFieldset.appendChild(pOne);
 
 const emailLabel = document.createElement("label")//email label
@@ -58,7 +60,9 @@ phoneP.appendChild(phoneLabel);
 phoneP.appendChild(phoneInput);
 
 const contactFieldSet = document.createElement("fieldset");//create a fieldset for contact info.
-contactFieldSet.textContent="Contact Information"
+const contactLegend = document.createElement("legend");
+contactLegend.textContent="Contact Information";
+contactFieldSet.appendChild(contactLegend);
 contactFieldSet.appendChild(emailP); //append emailP to contact Fieldset
 contactFieldSet.appendChild(phoneP); // append phoneP to contact Fieldset
 
@@ -76,7 +80,9 @@ commentP.appendChild(commentLabel);
 commentP.appendChild(commentTextArea);
 
 const feedbackFieldset = document.createElement("fieldset"); //create a fieldset for comment
-feedbackFieldset.textContent = "Additional Comments";
+const feedbackLegend = document.createElement("legend");
+feedbackLegend.textContent = "Additional Comments";
+feedbackFieldset.appendChild(feedbackLegend);
 feedbackFieldset.appendChild(commentP);
 
 const selectFlavorLabel = document.createElement("label");
@@ -105,12 +111,16 @@ selectFlavorP.appendChild(selectFlavorLabel);
 selectFlavorP.appendChild(selectFlavor);
 
 const flavorFieldset = document.createElement("fieldset"); //create a fieldset for flavor
-flavorFieldset.textContent="Coffee Flavors";
+const flavorLegend = document.createElement("legend");
+flavorLegend.textContent="Coffee Flavors";
+flavorFieldset.appendChild(flavorLegend);
 flavorFieldset.appendChild(selectFlavorP);
 
 
 const radioFieldset = document.createElement("fieldset"); //create a fieldset for employment radio input
-radioFieldset.textContent = "What are you looking for?"
+const radioLegend = document.createElement("legend");
+radioLegend.textContent = "What are you looking for?"
+radioFieldset.appendChild(radioLegend);
 
 const addForEmploymentLabel = document.createElement("label");
 addForEmploymentLabel.textContent = "Seeking Employment";
